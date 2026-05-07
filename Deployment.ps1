@@ -152,7 +152,9 @@ $appsPowerdesk = @(
     @{ Id = "Microsoft.DotNet.AspNetCore.8"; Name = "ASP.NET Core Runtime 8 (LTS)" },
     @{ Id = "Oracle.JavaRuntimeEnvironment"; Name = "Java 8" },
     @{ Id = "Microsoft.OpenJDK.17"; Name = "OpenJDK 17 LTS" },
-    @{ Id = "Microsoft.OpenJDK.21"; Name = "OpenJDK 21 LTS" }
+    @{ Id = "Microsoft.OpenJDK.21"; Name = "OpenJDK 21 LTS" },
+    @{ Id = "Microsoft.DirectX"; Name = "DirectX End-User Runtime" },
+    @{ Id = "Microsoft.XNARedist"; Name = "Microsoft XNA Framework" }
 )
 
 # ============================
@@ -171,6 +173,7 @@ $appsPowerbuild = $appsPowerdesk + @(
     @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
      
     # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
+    # @{ Id = "Famatech.AdvancedIPScanner"; Name = "Advanced IP Scanner" },
     # @{ Id = "JAMSoftware.TreeSize.Free"; Name = "TreeSize Free" },
     # @{ Id = "9WZDNCRFJCTK"; Name = "AutoCAD - DWG Viewer & Editor" },
     # @{ Id = "BlenderFoundation.Blender"; Name = "Blender" },
