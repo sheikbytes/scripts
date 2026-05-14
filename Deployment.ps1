@@ -134,14 +134,14 @@ if ($gpu -like "*NVIDIA*") { Install-NvidiaApp }
 # powerdesk — Runtime & Framework
 # =====================================
 $appsPowerdesk = @(
-    @{ Id = "Microsoft.VCRedist.2005.x64"; Name = "Visual C++ 2005 x64" },
-    @{ Id = "Microsoft.VCRedist.2005.x86"; Name = "Visual C++ 2005 x86" },
-    @{ Id = "Microsoft.VCRedist.2008.x64"; Name = "Visual C++ 2008 x64" },
-    @{ Id = "Microsoft.VCRedist.2008.x86"; Name = "Visual C++ 2008 x86" },
+    # @{ Id = "Microsoft.VCRedist.2005.x64"; Name = "Visual C++ 2005 x64" },
+    # @{ Id = "Microsoft.VCRedist.2005.x86"; Name = "Visual C++ 2005 x86" },
+    # @{ Id = "Microsoft.VCRedist.2008.x64"; Name = "Visual C++ 2008 x64" },
+    # @{ Id = "Microsoft.VCRedist.2008.x86"; Name = "Visual C++ 2008 x86" },
     @{ Id = "Microsoft.VCRedist.2010.x64"; Name = "Visual C++ 2010 x64" },
     @{ Id = "Microsoft.VCRedist.2010.x86"; Name = "Visual C++ 2010 x86" },
-    @{ Id = "Microsoft.VCRedist.2012.x64"; Name = "Visual C++ 2012 x64" },
-    @{ Id = "Microsoft.VCRedist.2012.x86"; Name = "Visual C++ 2012 x86" },
+    # @{ Id = "Microsoft.VCRedist.2012.x64"; Name = "Visual C++ 2012 x64" },
+    # @{ Id = "Microsoft.VCRedist.2012.x86"; Name = "Visual C++ 2012 x86" },
     @{ Id = "Microsoft.VCRedist.2013.x64"; Name = "Visual C++ 2013 x64" },
     @{ Id = "Microsoft.VCRedist.2013.x86"; Name = "Visual C++ 2013 x86" },
     @{ Id = "Microsoft.VCRedist.2015+.x64"; Name = "Visual C++ v14 x64" },
@@ -150,11 +150,11 @@ $appsPowerdesk = @(
     @{ Id = "Microsoft.DotNet.DesktopRuntime.8"; Name = ".NET Desktop Runtime 8 (LTS)" },
     @{ Id = "Microsoft.DotNet.AspNetCore.6"; Name = "ASP.NET Core Runtime 6 (LTS)" },
     @{ Id = "Microsoft.DotNet.AspNetCore.8"; Name = "ASP.NET Core Runtime 8 (LTS)" },
-    @{ Id = "Oracle.JavaRuntimeEnvironment"; Name = "Java 8" },
-    @{ Id = "Microsoft.OpenJDK.17"; Name = "OpenJDK 17 LTS" },
-    @{ Id = "Microsoft.OpenJDK.21"; Name = "OpenJDK 21 LTS" },
-    @{ Id = "Microsoft.DirectX"; Name = "DirectX End-User Runtime" },
-    @{ Id = "Microsoft.XNARedist"; Name = "Microsoft XNA Framework" }
+    # @{ Id = "Oracle.JavaRuntimeEnvironment"; Name = "Java 8" },
+    # @{ Id = "Microsoft.OpenJDK.17"; Name = "OpenJDK 17 LTS" },
+    @{ Id = "Microsoft.OpenJDK.21"; Name = "OpenJDK 21 LTS" }
+    # @{ Id = "Microsoft.DirectX"; Name = "DirectX End-User Runtime" },
+    # @{ Id = "Microsoft.XNARedist"; Name = "Microsoft XNA Framework" }
 )
 
 # ============================
@@ -163,12 +163,12 @@ $appsPowerdesk = @(
 $appsPowerbuild = $appsPowerdesk + @(
     @{ Id = "7zip.7zip"; Name = "7-Zip" },
     @{ Id = "Google.Chrome"; Name = "Google Chrome" },
-    @{ Id = "Mozilla.Firefox"; Name = "Mozilla Firefox" },
+    # @{ Id = "Mozilla.Firefox"; Name = "Mozilla Firefox" },
     @{ Id = "9NKSQGP7F2NH"; Name = "WhatsApp" },
     @{ Id = "SlackTechnologies.Slack"; Name = "Slack" },
-    @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
+    # @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
     @{ Id = "AnyDesk.AnyDesk"; Name = "AnyDesk" },
-    @{ Id = "RustDesk.RustDesk"; Name = "RustDesk" },
+    # @{ Id = "RustDesk.RustDesk"; Name = "RustDesk" },
     @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" },
     @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
      
