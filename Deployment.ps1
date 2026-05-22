@@ -169,8 +169,8 @@ $appsPowerbuild = $appsPowerdesk + @(
     # @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
     @{ Id = "AnyDesk.AnyDesk"; Name = "AnyDesk" },
     # @{ Id = "RustDesk.RustDesk"; Name = "RustDesk" },
-    @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" },
-    @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
+    @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" }
+    # @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
      
     # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
     # @{ Id = "Famatech.AdvancedIPScanner"; Name = "Advanced IP Scanner" },
