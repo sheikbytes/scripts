@@ -152,7 +152,7 @@ $appsPowerdesk = @(
     @{ Id = "Microsoft.DotNet.AspNetCore.8"; Name = "ASP.NET Core Runtime 8 (LTS)" },
     # @{ Id = "Oracle.JavaRuntimeEnvironment"; Name = "Java 8" },
     # @{ Id = "Microsoft.OpenJDK.17"; Name = "OpenJDK 17 LTS" },
-    @{ Id = "Microsoft.OpenJDK.21"; Name = "OpenJDK 21 LTS" }
+    # @{ Id = "Microsoft.OpenJDK.21"; Name = "OpenJDK 21 LTS" }
     # @{ Id = "Microsoft.DirectX"; Name = "DirectX End-User Runtime" },
     # @{ Id = "Microsoft.XNARedist"; Name = "Microsoft XNA Framework" }
 )
@@ -163,14 +163,14 @@ $appsPowerdesk = @(
 $appsPowerbuild = $appsPowerdesk + @(
     @{ Id = "7zip.7zip"; Name = "7-Zip" },
     @{ Id = "Google.Chrome"; Name = "Google Chrome" },
-    @{ Id = "Mozilla.Firefox"; Name = "Mozilla Firefox" },
+    # @{ Id = "Mozilla.Firefox"; Name = "Mozilla Firefox" },
     @{ Id = "9NKSQGP7F2NH"; Name = "WhatsApp" },
     @{ Id = "SlackTechnologies.Slack"; Name = "Slack" },
-    # @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
-    @{ Id = "AnyDesk.AnyDesk"; Name = "AnyDesk" },
+    @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
+    # @{ Id = "AnyDesk.AnyDesk"; Name = "AnyDesk" },
     # @{ Id = "RustDesk.RustDesk"; Name = "RustDesk" },
     @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" }
-    @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
+    # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
     @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
      
     # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
