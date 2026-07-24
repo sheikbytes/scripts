@@ -169,7 +169,7 @@ $appsPowerbuild = $appsPowerdesk + @(
     @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
     # @{ Id = "AnyDesk.AnyDesk"; Name = "AnyDesk" },
     # @{ Id = "RustDesk.RustDesk"; Name = "RustDesk" },
-    @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" }
+    @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" },
     # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
     @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
      
