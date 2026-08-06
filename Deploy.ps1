@@ -165,13 +165,13 @@ $appsPowerbuild = $appsPowerdesk + @(
     @{ Id = "Google.Chrome"; Name = "Google Chrome" },
     # @{ Id = "Mozilla.Firefox"; Name = "Mozilla Firefox" },
     @{ Id = "9NKSQGP7F2NH"; Name = "WhatsApp" },
-    @{ Id = "SlackTechnologies.Slack"; Name = "Slack" },
-    @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
+    # @{ Id = "SlackTechnologies.Slack"; Name = "Slack" },
+    # @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
     # @{ Id = "AnyDesk.AnyDesk"; Name = "AnyDesk" },
     # @{ Id = "RustDesk.RustDesk"; Name = "RustDesk" },
     @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" },
     # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
-    @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
+    # @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
      
     # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
     # @{ Id = "Famatech.AdvancedIPScanner"; Name = "Advanced IP Scanner" },
