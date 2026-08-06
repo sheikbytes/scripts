@@ -52,7 +52,7 @@ CPU         : $cpu
 GPU         : $gpu
 "@ | Out-File $logPath -Append
 
-Write-Host "`n==================== SYSTEM PROFILE ====================" -ForegroundColor Cyan
+Write-Host "`n====================== SYSTEM PROFILE ======================" -ForegroundColor Cyan
 Write-Host " PC Name     : $env:COMPUTERNAME"
 Write-Host " Username    : $env:USERNAME"
 Write-Host " Model       : $($sys.Model)"
