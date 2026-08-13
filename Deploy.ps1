@@ -146,13 +146,15 @@ $appsPowerdesk = @(
     @{ Id = "Microsoft.VCRedist.2013.x86"; Name = "Visual C++ 2013 x86" },
     @{ Id = "Microsoft.VCRedist.2015+.x64"; Name = "Visual C++ v14 x64" },
     @{ Id = "Microsoft.VCRedist.2015+.x86"; Name = "Visual C++ v14 x86" },
-    @{ Id = "Microsoft.DotNet.DesktopRuntime.6"; Name = ".NET Desktop Runtime 6 (LTS)" },
+    #@{ Id = "Microsoft.DotNet.DesktopRuntime.6"; Name = ".NET Desktop Runtime 6 (LTS)" },
     @{ Id = "Microsoft.DotNet.DesktopRuntime.8"; Name = ".NET Desktop Runtime 8 (LTS)" },
-    @{ Id = "Microsoft.DotNet.AspNetCore.6"; Name = "ASP.NET Core Runtime 6 (LTS)" },
-    @{ Id = "Microsoft.DotNet.AspNetCore.8"; Name = "ASP.NET Core Runtime 8 (LTS)" }
+    @{ Id = "Microsoft.DotNet.DesktopRuntime.10"; Name = ".NET Desktop Runtime 10 (LTS)" },
+    # @{ Id = "Microsoft.DotNet.AspNetCore.6"; Name = "ASP.NET Core Runtime 6 (LTS)" },
+    # @{ Id = "Microsoft.DotNet.AspNetCore.8"; Name = "ASP.NET Core Runtime 8 (LTS)" },
+    # @{ Id = "Microsoft.DotNet.AspNetCore.10"; Name = "ASP.NET Core Runtime 10 (LTS)" },
     # @{ Id = "Oracle.JavaRuntimeEnvironment"; Name = "Java 8" },
     # @{ Id = "Microsoft.OpenJDK.17"; Name = "OpenJDK 17 LTS" },
-    # @{ Id = "Microsoft.OpenJDK.21"; Name = "OpenJDK 21 LTS" }
+    @{ Id = "Microsoft.OpenJDK.21"; Name = "OpenJDK 21 LTS" }
     # @{ Id = "Microsoft.DirectX"; Name = "DirectX End-User Runtime" },
     # @{ Id = "Microsoft.XNARedist"; Name = "Microsoft XNA Framework" }
 )
@@ -161,25 +163,24 @@ $appsPowerdesk = @(
 # powerbuild — Application
 # ============================
 $appsPowerbuild = $appsPowerdesk + @(
-    @{ Id = "7zip.7zip"; Name = "7-Zip" },
-    @{ Id = "Google.Chrome"; Name = "Google Chrome" },
+    @{ Id = "RARLab.WinRAR"; Name = "WinRAR" },
+    # @{ Id = "7zip.7zip"; Name = "7-Zip" },
     # @{ Id = "Mozilla.Firefox"; Name = "Mozilla Firefox" },
+    @{ Id = "Google.Chrome"; Name = "Google Chrome" },
     @{ Id = "9NKSQGP7F2NH"; Name = "WhatsApp" },
-    # @{ Id = "SlackTechnologies.Slack"; Name = "Slack" },
-    # @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" },
+    # @{ Id = "Algento.Botim"; Name = "Botim" },
+    @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" },
+    # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
+    # @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" },
+    @{ Id = "SlackTechnologies.Slack"; Name = "Slack" },
+    @{ Id = "Zoom.Zoom"; Name = "Zoom Workplace" }
     # @{ Id = "AnyDesk.AnyDesk"; Name = "AnyDesk" },
     # @{ Id = "RustDesk.RustDesk"; Name = "RustDesk" },
-    @{ Id = "PDFgear.PDFgear"; Name = "PDFgear" }
-    # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
-    # @{ Id = "Microsoft.Office"; Name = "Microsoft 365 Apps for enterprise" }
-     
-    # @{ Id = "FastCopy.FastCopy"; Name = "FastCopy" },
     # @{ Id = "Famatech.AdvancedIPScanner"; Name = "Advanced IP Scanner" },
     # @{ Id = "JAMSoftware.TreeSize.Free"; Name = "TreeSize Free" },
     # @{ Id = "9WZDNCRFJCTK"; Name = "AutoCAD - DWG Viewer & Editor" },
     # @{ Id = "BlenderFoundation.Blender"; Name = "Blender" },
     # @{ Id = "XPDBVSS44R0L9H"; Name = "Notion" },
-    # @{ Id = "Algento.Botim"; Name = "Botim" },
     # @{ Id = "9NBLGGH4XXVW"; Name = "Trello" }  
 )
 
@@ -194,6 +195,7 @@ $appsPowerstack = $appsPowerbuild + @(
     @{ Id = "Canva.Affinity"; Name = "Affinity" },
     @{ Id = "Google.GoogleDrive"; Name = "Google Drive" },
     @{ Id = "VideoLAN.VLC"; Name = "VLC media player" },
+    @{ Id = "Gyan.FFmpeg"; Name = "FFmpeg" },
     @{ Id = "Telegram.TelegramDesktop"; Name = "Telegram Desktop" }
     
     # @{ Id = "Discord.Discord"; Name = "Discord" },
