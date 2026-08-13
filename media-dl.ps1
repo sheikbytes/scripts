@@ -1,5 +1,5 @@
 # ==============================================================================
-# Media Processing Tool (FFmpeg / yt-dlp)
+# Media Processing Tool (FFmpeg / yt-dlp) - Upgraded Version
 # ==============================================================================
 
 function Check-Dependency {
@@ -89,6 +89,10 @@ switch ($sourceChoice) {
     "2" {
         if (-not $hasYtDlp) { return }
 
+        # Check for yt-dlp updates before downloading
+        Write-Host "[*] Checking for yt-dlp updates..." -ForegroundColor Gray
+        yt-dlp -U
+
         Write-Host ""
         $url = Read-Host "Enter video/media Web URL"
 
@@ -96,6 +100,11 @@ switch ($sourceChoice) {
             Write-Host "[!] Error: URL cannot be empty." -ForegroundColor Red
             return
         }
+
+        # Anti-403 Base Flags
+        $baseArgs = @(
+            "--extractor-args", "youtube:player_client=android,web"
+        )
 
         Write-Host ""
         Write-Host "Select Download Format / Quality:" -ForegroundColor Yellow
@@ -111,22 +120,22 @@ switch ($sourceChoice) {
 
         switch ($ytdlpChoice) {
             "1" {
-                yt-dlp -x --audio-format mp3 --audio-quality 0 "$url"
+                yt-dlp @baseArgs -x --audio-format mp3 --audio-quality 0 "$url"
             }
             "2" {
-                yt-dlp -x --audio-format aac --audio-quality 0 "$url"
+                yt-dlp @baseArgs -x --audio-format aac --audio-quality 0 "$url"
             }
             "3" {
-                yt-dlp -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --merge-output-format mp4 "$url"
+                yt-dlp @baseArgs -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --merge-output-format mp4 "$url"
             }
             "4" {
-                yt-dlp -f "bestvideo[height<=1080]+bestaudio/best[height<=1080]" --merge-output-format mp4 "$url"
+                yt-dlp @baseArgs -f "bestvideo[height<=1080]+bestaudio/best[height<=1080]" --merge-output-format mp4 "$url"
             }
             "5" {
-                yt-dlp -f "bestvideo[height<=2160]+bestaudio/best[height<=2160]" --merge-output-format mp4 "$url"
+                yt-dlp @baseArgs -f "bestvideo[height<=2160]+bestaudio/best[height<=2160]" --merge-output-format mp4 "$url"
             }
             "6" {
-                yt-dlp -f "bestvideo+bestaudio/best" --merge-output-format mp4 "$url"
+                yt-dlp @baseArgs -f "bestvideo+bestaudio/best" --merge-output-format mp4 "$url"
             }
             default { Write-Host "[!] Invalid option selected." -ForegroundColor Red }
         }
